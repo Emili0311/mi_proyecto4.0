@@ -1,4 +1,4 @@
-const MisDatos = () => {
+const Presentacion = () => {
     const date = new Date();
 
     return (
@@ -6,4 +6,4 @@ const MisDatos = () => {
     )
 }
 
-export default MisDatos;
+export default Presentacion;

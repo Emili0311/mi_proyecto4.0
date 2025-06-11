@@ -30,7 +30,7 @@ public class MiProyectoController : ControllerBase
     var db = client.GetDatabase ("Escuela_Emili_Milka");
     var collection = db.GetCollection<Equipo>("Equipo");
 
-    var lista = collection.Find(FilterDefinition<Equipo>.Empty).ToList();
+    var lista = collection.Find(FilterDefinition<Equipo>.Empty).FirstOrDefault();
     return Ok(lista);
  }
 }
